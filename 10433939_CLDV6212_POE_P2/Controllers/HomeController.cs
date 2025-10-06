@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using _10433939_CLDV6212_POE_P2.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace _10433939_CLDV6212_POE_P2.Controllers
 {
