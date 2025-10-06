@@ -1,0 +1,19 @@
+﻿@model _10433939_CLDV6212_POE_P2.Models.Customer
+
+<h1>Add new Customer</h1>
+
+<form asp-action="AddCustomer" method="post">
+    <div class="form-group">
+        <label asp-for="Customer_Name"></label>
+        <input asp-for="Customer_Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="email"></label>
+        <input asp-for="email" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="password"></label>
+        <input asp-for="password" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

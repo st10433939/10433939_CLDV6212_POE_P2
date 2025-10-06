@@ -1,0 +1,53 @@
+﻿@model IEnumerable<_10433939_CLDV6212_POE_P2.Models.Customer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="AddCustomer">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Customer_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.password)
+                </td>
+                <td>
+                    <form asp-action="Delete" method="post" style="display:inline;">
+                        <input type="hidden" name="partitionKey" value="@item.PartitionKey" />
+                        <input type="hidden" name="rowKey" value="@item.RowKey" />
+                        <button type="submit" class="btn btn-danger"
+                                onclick="return confirm('Are you sure you would like to delete this Customer?');">
+                            Delete
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
