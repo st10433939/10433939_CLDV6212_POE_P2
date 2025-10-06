@@ -20,7 +20,7 @@ public class Function1
     public Function1(ILogger<Function1> logger)
     {
         _logger = logger;
-        _storageConnectionString = Environment.GetEnvironmentVariable("connection");
+        _storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=10433939storage;AccountKey=T+cF1llgLLpDVoHRvYB2euojWeH561LY3k5ALbmnupU3+eV9QDoAxRcrgRVivxywRRq+NVWjptsL+AStM3ttkw==;EndpointSuffix=core.windows.net";
         //Create table client
         var serviceClient = new TableServiceClient(_storageConnectionString);
         _tableClient = serviceClient.GetTableClient("orders");
