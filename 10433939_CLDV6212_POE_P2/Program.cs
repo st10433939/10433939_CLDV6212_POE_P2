@@ -10,7 +10,7 @@ namespace _10433939_CLDV6212_POE_P2.Models
             var configuration = builder.Configuration;
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddHttpClient();
             //Add services to the container
             builder.Services.AddControllersWithViews();
 

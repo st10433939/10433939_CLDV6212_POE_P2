@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36408.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10433939_CLDV6212_POE_P2", "10433939_CLDV6212_POE_P2\10433939_CLDV6212_POE_P2.csproj", "{EFA31AF2-F7DB-4AEE-A6B1-AAA6EE0C3865}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsBasics", "FunctionsBasics\FunctionsBasics.csproj", "{78B5B7F5-A756-463F-A5F9-87ED362483EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueFunctionBasics", "QueueFunctionBasics\QueueFunctionBasics.csproj", "{414E1036-EE7E-4495-BD68-BD426D4647BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EFA31AF2-F7DB-4AEE-A6B1-AAA6EE0C3865}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFA31AF2-F7DB-4AEE-A6B1-AAA6EE0C3865}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFA31AF2-F7DB-4AEE-A6B1-AAA6EE0C3865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B5B7F5-A756-463F-A5F9-87ED362483EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B5B7F5-A756-463F-A5F9-87ED362483EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B5B7F5-A756-463F-A5F9-87ED362483EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B5B7F5-A756-463F-A5F9-87ED362483EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414E1036-EE7E-4495-BD68-BD426D4647BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414E1036-EE7E-4495-BD68-BD426D4647BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414E1036-EE7E-4495-BD68-BD426D4647BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414E1036-EE7E-4495-BD68-BD426D4647BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
