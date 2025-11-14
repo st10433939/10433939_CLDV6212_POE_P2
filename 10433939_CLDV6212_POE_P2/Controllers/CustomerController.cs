@@ -9,19 +9,18 @@ namespace _10433939_CLDV6212_POE_P2.Controllers
     public class CustomerController : Controller
     {
         public readonly TableStorageService _tableStorageService;
-        public readonly ApplicationDbContext _dbContext;
+        //public readonly ApplicationDbContext _dbContext;
 
-
-        public CustomerController(TableStorageService tableStorageService, ApplicationDbContext applicationDbContext)
+        public CustomerController(TableStorageService tableStorageService)
         {
             _tableStorageService = tableStorageService;
-            _dbContext = applicationDbContext;
+            //_dbContext = applicationDbContext;
         }
 
         public async Task<IActionResult> Index()
         {
             var customers = await _tableStorageService.GetAllCustomersAsync();
-            View(await _dbContext.Customer.ToListAsync());
+            //View(await _dbContext.Customer.ToListAsync());
             return View(customers);
         }
         //Delete
