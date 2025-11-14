@@ -1,4 +1,7 @@
+//using Microsoft.EntityFrameworkCore;
 using _10433939_CLDV6212_POE_P2.Services;
+using _10433939_CLDV6212_POE_P2.Data;
+
 
 namespace _10433939_CLDV6212_POE_P2.Models
 {
@@ -13,6 +16,10 @@ namespace _10433939_CLDV6212_POE_P2.Models
             builder.Services.AddHttpClient();
             //Add services to the container
             builder.Services.AddControllersWithViews();
+
+            //Add DB Context
+            //builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             //Register TableStorage with configuration
             builder.Services.AddSingleton(new TableStorageService(configuration.GetConnectionString("AzureStorage")));
